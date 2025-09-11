@@ -26,7 +26,7 @@ def curve(points, amount, dimension):
 actual_points = np.array([[0,10], [4, -20],[7, 50] , [11, -20], [13,10]])
 cords = curve( actual_points, 1000, 2)
 
-plt.figure(figsize=(8, 6))             # Create a figure containing a single Axes.
+plt.figure(figsize=(8, 6))
 plt.plot(actual_points[:, 0], actual_points[:, 1], 'r--')
-plt.plot(cords[:, 0], cords[:, 1], 'b-')  # Plot some data on the Axes.
+plt.plot(cords[:, 0], cords[:, 1], 'b-')
 plt.show()
